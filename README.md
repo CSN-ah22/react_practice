@@ -1,8 +1,11 @@
 # 목록
-[초기화]()
-[컴포넌트 기본]()
-[MAP]()
-[Props-type]()
+[초기화](https://github.com/CSN-ah22/react_practice/blob/master/README.md#%EC%83%88%EB%A1%9C%EC%9A%B4-%ED%8C%8C%EC%9D%BC-%EC%83%9D%EC%84%B1)
+<br>
+[컴포넌트](https://github.com/CSN-ah22/react_practice/blob/master/README.md#%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8%EC%9D%98-%EA%B8%B0%EB%B3%B8-%ED%98%95%EC%8B%9D)
+<br>
+[MAP](https://github.com/CSN-ah22/react_practice/blob/master/README.md#map%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+<br>
+[Props-type](https://github.com/CSN-ah22/react_practice/blob/master/README.md#prop-types-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 
 ### 새로운 파일 생성
 202030430_최선아 라는 폴더를 만들고<BR>
