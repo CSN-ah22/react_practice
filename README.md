@@ -66,7 +66,47 @@ ReactDOM.render(<App />,document.getElementById('root'));
   
 + ReactDOM.render() 함수는 첫번째 인자로 오는 컴포넌트를 그려질 결과로 만들어줍니다
 + 두번째 인자로 오는 것은 그려질 위치로 지정합니다
+  
 <br>
+  
 + document.getElementById('root') 함수는 html에서 id가 root인 태그를 지정합니다
 + <App /> 표시를 컴포넌트로 인식합니다
-    
+  
+## 데이터를 배열에 저장하기
+  ```
+const foodLike = [
+  {
+  name: 'kimchi',
+  image: 'http...'
+  } ,
+  {
+  ...
+  }
+]
+ ```
+## MAP함수 사용하기
+  ```
+function Food({name}) {
+  return (
+    <div>
+    <h1> I like{name} </h1>
+    <img src={picture} />
+    </div>
+  );
+}
+```
+```
+const foodLike = [
+  {name: 'kimchi',
+  image: 'http...'}
+]
+ ```
+```
+  fuction App(){
+  return(
+  <div>
+  {foodLike.map(dish => (<Food name={dish.name} picture={dish.image} />))}
+  </div>
+  );
+  export default App;
+```
