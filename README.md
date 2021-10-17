@@ -7,12 +7,13 @@
 <br>
 [Props-type](https://github.com/CSN-ah22/react_practice/blob/master/README.md#prop-types-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 <br>
-[클래스형 컴포넌트]()
+[클래스형 컴포넌트](https://github.com/CSN-ah22/react_practice/blob/master/README.md#%ED%81%B4%EB%9E%98%EC%8A%A4%ED%98%95-%EC%BB%B4%ED%8F%AC%EB%84%8C%ED%8A%B8)
 <br>
-[state]()
+[state](https://github.com/CSN-ah22/react_practice/blob/master/README.md#state-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 <br>
-[6000초가 지나면 state 값을 바꾸기]()
-[axios]()
+[6000초가 지나면 state 값을 바꾸기](https://github.com/CSN-ah22/react_practice/blob/master/README.md#6000%EC%B4%88%EA%B0%80-%EC%A7%80%EB%82%98%EB%A9%B4-state-%EA%B0%92%EC%9D%84-%EB%B0%94%EA%BE%B8%EA%B8%B0)
+<BR>
+[axios](https://github.com/CSN-ah22/react_practice/blob/master/README.md#axios-%EC%84%A4%EC%B9%98-api-x--%ED%95%84%EC%9A%94%EC%97%86%EC%9D%8Cx)
 
 ### 새로운 파일 생성
 202030430_최선아 라는 폴더를 만들고<BR>
