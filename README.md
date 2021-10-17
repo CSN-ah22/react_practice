@@ -72,10 +72,13 @@ ReactDOM.render(<App />,document.getElementById('root'));
 + document.getElementById('root') 함수는 html에서 id가 root인 태그를 지정합니다
 + <App /> 표시를 컴포넌트로 인식합니다
   
-## 데이터를 배열에 저장하기
+## 데이터를 배열에 저장하기(key props 반드시 추가)
+  + key props 는 유일해야하므로 중복값은 불가하다
+  
   ```
 const foodLike = [
   {
+  id: 1,
   name: 'kimchi',
   image: 'http...'
   } ,
@@ -89,7 +92,7 @@ const foodLike = [
 function Food({name}) {
   return (
     <div>
-    <h1> I like{name} </h1>
+    <h1> I like{id,name, picture} </h1>
     <img src={picture} />
     </div>
   );
@@ -105,8 +108,47 @@ const foodLike = [
   fuction App(){
   return(
   <div>
-  {foodLike.map(dish => (<Food name={dish.name} picture={dish.image} />))}
+  {foodLike.map(dish => (<Food id={dish.id} name={dish.name} picture={dish.image} />))}
   </div>
   );
   export default App;
 ```
+## MAP 함수 사용하기2
+  + map(함수)
+
+```
+  function renderFood(dish){
+    return <Food Food id={dish.id} name={dish.name} picture={dish.image} />;
+  }
+```
+  
+```
+    fuction App(){
+  return(
+  <div>
+  {foodLike.map(renderFood)}
+  </div>
+  );
+  export default App;
+  
+```
+## prop-types 사용하기
+  ### prop-types 설치
+  > npm install prop-types
+  ### prop-types 사용
+  + App.js 파일 열기
+  
+  ```
+  import PropTypes from 'prop-types';
+  
+  ...Food컴포넌트 자리...
+  ...데이터 배열 자리...
+  ...App컴포넌트 자리...
+  
+  Food.propTypes = {
+    name: PropTypes.string.isRequired,
+    picture: PropTypes.string.isRequired,
+    rating: PropTypes.number.isRequired
+  };
+  
+  ```
