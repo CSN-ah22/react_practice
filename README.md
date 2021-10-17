@@ -7,10 +7,11 @@
 <br>
 [Props-type](https://github.com/CSN-ah22/react_practice/blob/master/README.md#prop-types-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 <br>
-[state]()
-<br>
 [클래스형 컴포넌트]()
 <br>
+[state]()
+<br>
+[6000초가 지나면 state 값을 바꾸기]()
 [axios]()
 
 ### 새로운 파일 생성
@@ -167,3 +168,50 @@ const foodLike = [
   };
   
   ```
+ ### 클래스형 컴포넌트
+  + 위치: App.js
+  
+```
+  class App extends React.Component {
+    render(){
+  return <h1>I'm a class component</h1>;
+    }
+  }
+```
+ ### state 사용하기
+  
+```jsx
+  class App extends React.Component {
+    state = {
+      count: 0,
+    };
+    add = () => {this.setState(current => ({count: current.count + 1}));};
+    minus = () => {this.setState(current => ({count: current.count - 1}));};
+    render(){
+  return <h1>The number is: {this.state.count}</h1>;
+         <button onClick={this.add}>Add</button>
+         <button onClick={this.minus}>Minus</button>
+    }
+  }
+```
+### 6000초가 지나면 state 값을 바꾸기
+  
+  ```jsx
+  class App extends React.Component {
+    state = {
+      isLoading: true,
+    };
+    componenetDidMount(){
+    setTimeout(() => {
+                        this.setState({isLoading:false})
+                      },6000)
+    }
+    render(){
+    return <div>{isLoading ? 'Loading...' : 'We are ready'}</div>;
+    }
+  }
+  ```
+  
+  ### axios 설치 [api X = 필요없음X]
+  > npm install axios
+  
