@@ -6,6 +6,12 @@
 [MAP](https://github.com/CSN-ah22/react_practice/blob/master/README.md#map%ED%95%A8%EC%88%98-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
 <br>
 [Props-type](https://github.com/CSN-ah22/react_practice/blob/master/README.md#prop-types-%EC%82%AC%EC%9A%A9%ED%95%98%EA%B8%B0)
+<br>
+[state]()
+<br>
+[클래스형 컴포넌트]()
+<br>
+[axios]()
 
 ### 새로운 파일 생성
 202030430_최선아 라는 폴더를 만들고<BR>
