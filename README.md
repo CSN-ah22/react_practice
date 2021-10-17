@@ -45,5 +45,28 @@ npx create-react-app 파일명
   export default App;
   ```
   
+## 컴포넌트의 기본 형식
+```
+function App() {
+  return (
+    <div>Hello React</div>
+  );
+}
+
+export default App
+```
+
+index.js 에서 컴포넌트를 어떻게 사용할까?
+```
+import ReactDOM from 'react-dom';
+import App from './App';
+
+ReactDOM.render(<App />,document.getElementById('root')); 
+```
   
++ ReactDOM.render() 함수는 첫번째 인자로 오는 컴포넌트를 그려질 결과로 만들어줍니다
++ 두번째 인자로 오는 것은 그려질 위치로 지정합니다
+<br>
++ document.getElementById('root') 함수는 html에서 id가 root인 태그를 지정합니다
++ <App /> 표시를 컴포넌트로 인식합니다
     
