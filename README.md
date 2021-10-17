@@ -1,3 +1,9 @@
+# 목록
+[초기화]()
+[컴포넌트 기본]()
+[MAP]()
+[Props-type]()
+
 ### 새로운 파일 생성
 202030430_최선아 라는 폴더를 만들고<BR>
 VS로 열어둔다
@@ -22,7 +28,7 @@ npx create-react-app 파일명
   setupTest.js
   pakage-lock.json
   ```
-### index.js에서 <App />, 주의해가며 삭제할거 삭제하기
+### index.js에서 ' <App />, ' 주의해가며 삭제할거 삭제하기
   삭제목록
   ```
   import './index.css';<BR>
